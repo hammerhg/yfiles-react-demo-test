@@ -1,0 +1,33 @@
+{
+  "name": "react-demo-for-yfiles-for-html",
+  "version": "1.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "yfiles": "../../../lib-dev/es-modules/yfiles-23.0.4-eval-dev.tgz"
+  },
+  "scripts": {
+    "preinstall": "node -e \"require('fs').copyFileSync('../../../lib/license.json','./src/license.json');\"",
+    "start": "react-scripts --expose-gc --max-old-space-size=8192 start",
+    "build": "react-scripts --expose-gc --max-old-space-size=8192 build",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
